@@ -1,0 +1,19 @@
+        mag, angle = cv2.cartToPolar(gx, gy, angleInDegrees=True)
+
+##        mag, angle = cv2.cartToPolar(gx, gy, angleInDegrees=True)
+        
+        
+##
+        mag1, angle1 = cv2.cartToPolar(gx, gy, angleInDegrees=True)
+        print(mag)
+        print("------------------------>")
+        print(mag1)
+        print("------------------------>")
+        print(angle)
+        print("------------------------>")
+        print(angle1)
+    matches = bf.match(np.copy(binarray),np.copy(binarray2))
+    print("Image 3 Step 0")
+    imgx = cv2.drawMatches(imageorig,keypoint,image2orig,keypoints,matches, image,flags=2)
+  cv2.imshow("Image3",imgx)
+        cv2.imwrite("Image3.jpg",imgx)
