@@ -221,7 +221,7 @@ def main():
 ## image1="project_images/image1.jpg"
 ## image2="project_images/image2.jpg"
 ## image3="project_images/image3.jpg"
-##
+
  images=[image1,image2,image3,image4,image5,image6]
  emptyCanvas = cv2.imread(image1)
  kpArray=[]
